@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 const TechStack = dynamic(() => import("@partial/TechStack"));
+const MyName = dynamic(() => import("@partial/MyName"));
+const Projects = dynamic(() => import("@partial/Projects"));
 const GithubActivity = dynamic(() => import("@partial/GithubActivity"));
 const Writing = dynamic(() => import("@partial/Writing"));
 
@@ -17,6 +19,8 @@ export default function RootApp() {
     <Fragment>
       <Home />
       <TechStack />
+      <MyName />
+      <Projects />
       <GithubActivity />
       <Writing />
     </Fragment>

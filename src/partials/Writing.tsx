@@ -19,7 +19,7 @@ const Writing = () => {
           height={450}
           quality={100}
           className="w-full blur-sm scale-[2] lg:scale-100"
-          priority
+          loading="lazy"
         />
       </div>
       <ContentText align="right">

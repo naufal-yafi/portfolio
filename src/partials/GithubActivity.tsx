@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const GithubActivity = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center px-48 mt-24 group h-[140px] hover:h-[250px] overflow-hidden transition-all duration-500 cursor-zoom-in">
+    <section className="w-full flex flex-col justify-center items-center px-48 mt-24 mb-20 group h-[140px] hover:h-[250px] overflow-hidden transition-all duration-500 cursor-zoom-in">
       <p className="text-xs mb-4 group-hover:mb-0 group-hover:opacity-0 transition-opacity">
         336 contributions in the last year
       </p>

@@ -13,7 +13,9 @@ export const ContentText = (props: any) => {
 };
 
 export const ContentTitle = (props: any) => {
-  return <h1 className="text-6xl italic font-light">{props.children}</h1>;
+  return (
+    <h1 className="text-5xl md:text-6xl italic font-light">{props.children}</h1>
+  );
 };
 
 export const ContentDescription = (props: any) => {

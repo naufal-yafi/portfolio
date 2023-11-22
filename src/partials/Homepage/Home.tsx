@@ -5,6 +5,7 @@ import {
   ContentText,
   ContentTitle,
 } from "@component/ContentText";
+import GroupButton from "@component/GroupButton";
 import iconDownloadCloud from "@image/download-cloud.svg";
 import Image from "next/image";
 
@@ -30,16 +31,18 @@ const Home = () => {
           Engineering.
         </ContentDescription>
         <ContentButton>
-          <Button
-            color="yellow"
-            link="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRqhbxjNQVXctwMBdrCvjLTMfVvNKlpCdkVfWfDgwMBWvQHQzzqHlTmtXhpKLLTVxvXKrmb"
-            openNewTab={false}
-          >
-            Contact.me
-          </Button>
-          <Button type="outline" icon={iconDownloadCloud} openNewTab={false}>
-            Download CV
-          </Button>
+          <GroupButton>
+            <Button
+              color="yellow"
+              link="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRqhbxjNQVXctwMBdrCvjLTMfVvNKlpCdkVfWfDgwMBWvQHQzzqHlTmtXhpKLLTVxvXKrmb"
+              openNewTab={false}
+            >
+              Contact.me
+            </Button>
+            <Button type="outline" icon={iconDownloadCloud} openNewTab={false}>
+              Download CV
+            </Button>
+          </GroupButton>
         </ContentButton>
       </ContentText>
     </main>

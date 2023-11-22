@@ -1,12 +1,15 @@
 import Button from "@component/Button";
+import GroupButton from "@component/GroupButton";
 import iconCycleArrow from "@image/cycle-arrow.svg";
 import iconLinkedin from "@image/linkedin-icon.svg";
 
 const MyName = () => {
   return (
-    <section className="text-center mt-28 mb-8 font-bold flex flex-col justify-start items-center">
-      <h1 className="absolute translate-y-[-5px] text-2xl">My name...</h1>
-      <h2 className="text-8xl w-1/2 tracking-wide text-neutral-800">
+    <section className="px-6 text-center mt-44 mb-8 font-bold flex flex-col justify-start items-center">
+      <h1 className="absolute translate-y-[-10px] md:translate-y-[-5px] text-xl md:2xl">
+        My name...
+      </h1>
+      <h2 className="text-5xl md:text-8xl w-full lg:w-1/2 tracking-wide text-neutral-800 text-center mb-10">
         <span className="fill-transparent stroke-2 stroke-neutral-50">
           MUHAMMAD{" "}
         </span>
@@ -14,7 +17,7 @@ const MyName = () => {
         <span>YAFI&apos;</span>
       </h2>
 
-      <div className="flex gap-4 mt-10">
+      <GroupButton centerEver={true}>
         <Button
           icon={iconLinkedin}
           link="https://www.linkedin.com/in/naufal-yafi/"
@@ -29,7 +32,7 @@ const MyName = () => {
         >
           Find out about it...
         </Button>
-      </div>
+      </GroupButton>
     </section>
   );
 };

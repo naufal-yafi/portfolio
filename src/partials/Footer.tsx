@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col justify-center items-center pt-24 pb-14">
+    <footer className="w-full px-6 flex flex-col justify-center items-center pt-24 pb-14">
       <Button
         type="outline"
         icon={iconArrowUp}

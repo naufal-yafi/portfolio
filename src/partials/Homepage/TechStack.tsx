@@ -30,7 +30,7 @@ const TechStack = () => {
   ];
 
   return (
-    <section className="w-full flex justify-center items-center gap-10 pt-10 h-[80px]">
+    <section className="w-full px-6 md:px-0 flex flex-wrap justify-center items-center gap-10 pt-5 md:pt-10 h-[80px]">
       {techStacks.map((tech) => (
         <div key={tech.id}>
           <Image

@@ -1,3 +1,4 @@
+import Footer from "@partial/Footer";
 import Home from "@partial/Homepage/Home";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
 const TechStack = dynamic(() => import("@partial/Homepage/TechStack"));
 const MyName = dynamic(() => import("@partial/Homepage/MyName"));
 const Projects = dynamic(() => import("@partial/Homepage/Projects"));
-const GithubActivity = dynamic(() => import("@partial/Homepage/GithubActivity"));
+const GithubActivity = dynamic(
+  () => import("@partial/Homepage/GithubActivity"),
+);
 const Writing = dynamic(() => import("@partial/Homepage/Writing"));
 
 export default function RootApp() {
@@ -23,6 +26,7 @@ export default function RootApp() {
       <Projects />
       <GithubActivity />
       <Writing />
+      <Footer />
     </Fragment>
   );
 }

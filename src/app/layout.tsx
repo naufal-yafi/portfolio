@@ -1,5 +1,4 @@
 import "@/style/globals.css";
-import Footer from "@partial/Footer";
 import { Poppins } from "next/font/google";
 
 const inter = Poppins({
@@ -18,7 +17,6 @@ export default function RootLayout({
         className={`bg-neutral-900 text-neutral-50 overflow-x-hidden ${inter.className}`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   );

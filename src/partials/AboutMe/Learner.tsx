@@ -5,6 +5,7 @@ import {
   ContentText,
   ContentTitle,
 } from "@component/ContentText";
+import GroupButton from "@component/GroupButton";
 import imgDesign from "@image/img-design.webp";
 import imgEditing from "@image/img-editing.webp";
 import imgJobEditor from "@image/img-job-editor.webp";
@@ -19,7 +20,7 @@ const Learner = () => {
         </h1>
       </section>
 
-      <section className="h-screen md:h-[80vh] overflow-hidden flex justify-center items-center mt-14 group cursor-zoom-in">
+      <section className="h-screen md:h-[80vh] overflow-hidden flex justify-center items-center mt-14 group cursor-zoom-out">
         <div className="flex justify-center items-center w-full">
           <Image
             src={imgEditing}
@@ -39,7 +40,7 @@ const Learner = () => {
         </ContentText>
       </section>
 
-      <section className="w-full h-screen md:h-[80vh] overflow-hidden flex justify-center items-center group cursor-zoom-in">
+      <section className="w-full h-screen md:h-[80vh] overflow-hidden flex justify-center items-center group cursor-zoom-out">
         <div className="flex justify-center items-center w-full">
           <Image
             src={imgJobEditor}
@@ -66,7 +67,7 @@ const Learner = () => {
         </ContentText>
       </section>
 
-      <section className="h-screen md:h-[80vh] overflow-hidden flex justify-center items-center mt-14 group cursor-zoom-in">
+      <section className="h-screen md:h-[80vh] overflow-hidden flex justify-center items-center mt-14 group cursor-zoom-out">
         <div className="flex justify-center items-center w-full">
           <Image
             src={imgDesign}
@@ -90,12 +91,14 @@ const Learner = () => {
             it on Dribbble.
           </ContentDescription>
           <ContentButton>
-            <Button color="yellow" link="https://www.behance.net/naufal-yafi">
-              Behance
-            </Button>
-            <Button type="outline" link="https://dribbble.com/naufal_yaf">
-              Dribbble
-            </Button>
+            <GroupButton>
+              <Button color="yellow" link="https://www.behance.net/naufal-yafi">
+                Behance
+              </Button>
+              <Button type="outline" link="https://dribbble.com/naufal_yaf">
+                Dribbble
+              </Button>
+            </GroupButton>
           </ContentButton>
         </ContentText>
       </section>

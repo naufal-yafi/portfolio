@@ -1,6 +1,7 @@
 "use client";
 
 import Button from "@component/Button";
+import Link from "next/link";
 import { useState } from "react";
 
 const Journey = () => {
@@ -19,35 +20,38 @@ const Journey = () => {
       >
         <h1 className="italic font-light text-4xl mb-8">My Journey</h1>
         <p className="font-light leading-loose tracking-wide">
-          Bisa dibilang saya memiliki rasa ingin tau yang tinggi, membuat saya
-          pribadi ingin dan terus untuk belajar. Selain itu saya juga memiliki
-          sifat perfeksionis yang memakan waktu yang cukup lama untuk
-          memperbaiki sampai sebagus mungkin. Juga waktu adaptasi yang cukup
-          lama di lingkungan yang baru merupakan salah satu kekurangan saya.
+          You could say I have a high curiosity, which makes me Personally want
+          and continue to learn. Apart from that, I also have perfectionist
+          nature that takes quite a long time to fix it until it&apos;s as good
+          as possible. Also sufficient adaptation time taking a long time in a
+          new environment is one of my shortcomings.
+          <br /> <br />I got to know the world of programming when I was in SMP
+          02 Wiradesa class 2, At that time, I only learned HTML and CSS, and
+          went deeper again when I was in grade 2 at SMAN 01 Wiradesa, where
+          That time is very suitable for learning programming, because of the
+          activities teaching and learning is done online. So, I can learn
+          things others and pursue what I love. Even though I&apos;m still
+          learning HTML, CSS, Javascript from Mr. Sandika Galih (
+          <Link href="https://www.youtube.com/@sandhikagalihWPU">
+            <span className="underline italic text-yellow">
+              Web Programming Unpas
+            </span>
+          </Link>
+          ).
           <br /> <br />
-          Mengenal dunia programming ketika dibangku SMP 02 Wiradesa kelas 2,
-          waktu itu hanya belajar HTML dan CSS saja, dan menekuni lebih dalam
-          lagi ketika saya berada di bangku SMAN 01 Wiradesa kelas 2, dimana
-          waktu itu sangat pas untuk belajar programming, karena kegiatan
-          belajar mengajar dilakukan secara online. Jadi, saya bisa belajar hal
-          lain dan menekuni apa yang saya sukai. Walau masih belajar HTML, CSS,
-          Javascript dari Pak Sandika Galih (Web Programming Unpas).
+          High school has ended. While waiting for an announcement from
+          university or college, I bought the book &quot;Logic Basic Algorithms
+          and Programming&quot; written by Rosa A.S. Book This made me know more
+          deeply than the basic concepts programming.
           <br /> <br />
-          Waktu SMA pun telah berakhir. Sembari menunggu pengumuman dari
-          universitas atau pergurusan tinggi, saya membeli buku &quot;Logika
-          Algoritma dan Pemrograman Dasar&quot; yang ditulis oleh Rosa A.S. Buku
-          tersebut membuat saya mengetahui lebih dalam dari konsep dasar
-          programming.
-          <br /> <br />
-          Tahun ajaran baru telah dimulai, saya mempelajari banyak bahasa
-          pemrograman di kampus mulai dari Java, PHP, CSS Framework, Python.
-          Namun dari semua bahasa tersebut, saya lebih jatuh cinta kepada
-          Javascript. Karena saya lebih suka dibagian visual dan framework untuk
-          FrontEnd itu sendiri kebanyakan menggunakan Javascript, jadi saya
-          belajar React dan juga Next, hingga saat ini.
+          The new school year has started, I am studying many languages
+          programming on campus starting from Java, PHP, CSS Framework, Python.
+          But of all these languages, I fell in love more JavaScript. Because I
+          prefer the visual part and the framework for The FrontEnd itself uses
+          mostly Javascript, so I learning React and also Next, until now.
           <br /> <br />
           <span className="text-xs" id="text">
-            2023, 22 November
+            November 22, 2023
           </span>
         </p>
       </div>

@@ -1,4 +1,3 @@
-import Footer from "@partial/Footer";
 import Home from "@partial/Homepage/Home";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
@@ -16,6 +15,7 @@ const GithubActivity = dynamic(
   () => import("@partial/Homepage/GithubActivity"),
 );
 const Writing = dynamic(() => import("@partial/Homepage/Writing"));
+const Footer = dynamic(() => import("@partial/Footer"));
 
 export default function RootApp() {
   return (

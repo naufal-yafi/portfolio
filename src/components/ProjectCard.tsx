@@ -6,7 +6,7 @@ const ProjectCard = (props: any) => {
   return (
     <div
       className={`w-[300px] h-[500px] rounded-md overflow-hidden ${
-        props.disable ? "" : "hover:w-auto group"
+        props.disable ? "cursor-not-allowed" : "hover:w-auto group"
       }`}
     >
       <div

@@ -1,19 +1,23 @@
 export const ContentText = (props: any) => {
   return (
     <div
-      className={`absolute w-full px-6 lg:px-32 flex ${
+      className={`${
+        props.absolute === false ? "static" : "absolute"
+      } w-full px-6 lg:px-32 flex ${
         props.align === "right"
           ? "justify-end text-end"
           : "justify-start text-start"
       }`}
     >
-      <div className="w-full lg:w-2/5">{props.children}</div>
+      <div className={`w-full ${props.absolute === false ? '' : 'lg:w-2/5'}`}>{props.children}</div>
     </div>
   );
 };
 
 export const ContentTitle = (props: any) => {
-  return <h1 className="text-6xl italic font-light">{props.children}</h1>;
+  return (
+    <h1 className="text-5xl md:text-6xl italic font-light">{props.children}</h1>
+  );
 };
 
 export const ContentDescription = (props: any) => {

@@ -21,7 +21,7 @@ const Button = (props: any) => {
   return (
     <Link href={props.link} target={props.openNewTab ? "_blank" : "_self"}>
       <button
-        className={`text-sm font-medium rounded-full px-8 h-12 hover:opacity-80 flex ${
+        className={`w-full md:w-auto text-sm font-medium rounded-full px-8 h-12 hover:opacity-80 flex ${
           props.right_position_icon ? "flex-row-reverse" : "flex-row"
         } gap-4 items-center ${style}`}
       >

@@ -20,7 +20,6 @@ const Projects = () => {
       </div>
 
       <ProjectCard />
-      <ProjectCard />
       <ProjectCard disable={true} />
     </section>
   );

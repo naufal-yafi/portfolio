@@ -1,18 +1,14 @@
 "use client";
 
 import Button from "@component/Button";
+import useShowState from "@hook/useShowState";
 import Link from "next/link";
-import { useState } from "react";
 
 const Journey = () => {
-  const [show, setShow] = useState(false);
-
-  const HandleShowText = () => {
-    setShow(!show);
-  };
+  const { show, handleToggleShow } = useShowState();
 
   return (
-    <section className="px-6 lg:px-32 mt-14 flex flex-col">
+    <section className="px-6 lg:px-32 pt-14 flex flex-col" id="journey">
       <div
         className={`overflow-hidden ${
           show ? "h-full" : "h-[350px]"
@@ -50,9 +46,7 @@ const Journey = () => {
           prefer the visual part and the framework for The FrontEnd itself uses
           mostly Javascript, so I learning React and also Next, until now.
           <br /> <br />
-          <span className="text-xs" id="text">
-            November 22, 2023
-          </span>
+          <span className="text-xs">November 22, 2023</span>
         </p>
       </div>
       <div
@@ -62,11 +56,18 @@ const Journey = () => {
             : "absolute h-[350px] justify-center"
         } w-full flex items-end left-0 bg-gradient-to-t from-neutral-900 to-transparent`}
       >
-        <div onClick={HandleShowText}>
+        <div
+          onClick={handleToggleShow}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              handleToggleShow();
+            }
+          }}
+        >
           <Button
             color={show ? "white" : "yellow"}
             type={show ? "outline" : "bg-fill"}
-            link="#text"
+            link="#journey"
             openNewTab={false}
           >
             {show ? "Read Less" : "Read More"}

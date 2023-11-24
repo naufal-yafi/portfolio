@@ -12,8 +12,8 @@ const ProjectCard = (props: any) => {
       <div
         className={`w-[300px] h-[500px] ${
           props.disable
-            ? "bg-gradient-to-r from-neutral-800 to-neutral-900"
-            : "bg-neutral-800 group-hover:w-[500px] group-hover:h-[320px] transition-all duration-500"
+            ? "bg-gradient-to-b sm:bg-gradient-to-r from-neutral-800 to-neutral-900"
+            : "bg-neutral-800 group-hover:w-[500px] group-hover:h-[280px] sm:group-hover:h-[320px] transition-all duration-500"
         }`}
       ></div>
       {props.disable ? null : (

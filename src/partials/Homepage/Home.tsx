@@ -39,7 +39,11 @@ const Home = () => {
             >
               Contact.me
             </Button>
-            <Button type="outline" icon={iconDownloadCloud} openNewTab={false}>
+            <Button
+              type="outline"
+              icon={iconDownloadCloud}
+              link="/RESUME - Muhammad Naufal Yafi'.pdf"
+            >
               Download CV
             </Button>
           </GroupButton>

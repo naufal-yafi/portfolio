@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const SocialMedia = () => {
   return (
-    <section className="flex justify-center items-center w-full px-6 lg:px-32 mt-24">
+    <section className="flex flex-col md:flex-row justify-center items-center w-full px-6 lg:px-32 mt-24">
       <Image
         src={imgFace}
         alt="my face"

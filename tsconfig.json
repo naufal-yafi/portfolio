@@ -20,9 +20,12 @@
     ],
     "paths": {
       "@component/*": ["./src/components/*"],
+      "@hook/*": ["./src/hooks/*"],
       "@image/*": ["./src/images/*"],
       "@interface/*": ["./src/interfaces/*"],
       "@partial/*": ["./src/partials/*"],
+      "@service/*": ["./src/services/*"],
+      "@api/*": ["./src/services/apis/*"],
       "@/*": ["./src/*"]
     }
   },

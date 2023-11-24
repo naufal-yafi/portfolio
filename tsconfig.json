@@ -24,6 +24,8 @@
       "@image/*": ["./src/images/*"],
       "@interface/*": ["./src/interfaces/*"],
       "@partial/*": ["./src/partials/*"],
+      "@service/*": ["./src/services/*"],
+      "@api/*": ["./src/services/apis/*"],
       "@/*": ["./src/*"]
     }
   },

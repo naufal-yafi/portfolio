@@ -1,4 +1,8 @@
 import Home from "@partial/Homepage/Home";
+import {
+  ProjectsDesktopView,
+  ProjectsMobileView,
+} from "@partial/Homepage/Projects";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Fragment } from "react";
@@ -10,7 +14,6 @@ export const metadata: Metadata = {
 
 const TechStack = dynamic(() => import("@partial/Homepage/TechStack"));
 const MyName = dynamic(() => import("@partial/Homepage/MyName"));
-const Projects = dynamic(() => import("@partial/Homepage/Projects"));
 const GithubActivity = dynamic(
   () => import("@partial/Homepage/GithubActivity"),
 );
@@ -23,7 +26,12 @@ export default function RootApp() {
       <Home />
       <TechStack />
       <MyName />
-      <Projects />
+      <div className="hidden lg:block">
+        <ProjectsDesktopView />
+      </div>
+      <div className="block lg:hidden">
+        <ProjectsMobileView />
+      </div>
       <GithubActivity />
       <Writing />
       <Footer />

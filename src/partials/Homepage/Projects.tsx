@@ -1,6 +1,7 @@
 import Button from "@component/Button";
 import ProjectCard from "@component/ProjectCard";
 import iconArrowRightUpYellow from "@image/arrow-right-up-yellow.svg";
+import imgProjectCollosal from "@image/img-project-collosal.webp";
 
 export function ProjectsDesktopView() {
   return (
@@ -14,12 +15,17 @@ export function ProjectsDesktopView() {
           color="yellow"
           type="outline"
           openNewTab={false}
+          disable={true}
         >
           More Projects
         </Button>
       </div>
 
-      <ProjectCard />
+      <ProjectCard
+        img={imgProjectCollosal}
+        title="Slicing Design Using NextJS and TailwindCSS"
+        link="https://github.com/naufal-yafi/collosal-slicing-design"
+      />
       <ProjectCard disable={true} />
     </section>
   );
@@ -43,7 +49,11 @@ export function ProjectsMobileView() {
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-5">
-        <ProjectCard />
+        <ProjectCard
+          img={imgProjectCollosal}
+          title="Slicing Design Using NextJS and TailwindCSS"
+          link="https://github.com/naufal-yafi/collosal-slicing-design"
+        />
         <ProjectCard disable={true} />
       </div>
     </section>
